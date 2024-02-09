@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consumer Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Data Provision Centre</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="loggedin.html">DemoUser123</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mt-5">
+    <h1 class="text-center">Welcome, DemoUser123!</h1>
+<nav><ul> <a class="nav-link" href="loggedin.html">Back</a></ul></nav>
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search...">
+          </div>
+          <div class="form-group">
+            <label for="dataType">Filter by Data Type</label>
+            <select class="form-control" id="dataType">
+              <option value="">All</option>
+              <option value="API">API</option>
+              <option value="Archive">Archive</option>
+              <option value="Audio">Audio</option>
+              <option value="Backup">Backup</option>
+              <option value="Certificate">Certificate</option>
+              <option value="Config">Config</option>
+              <option value="CSV">CSV</option>
+              <option value="Excel">Excel</option>
+              <option value="GIS">GIS</option>
+              <option value="HTML">HTML</option>
+              <option value="Image">Image</option>
+              <option value="JSON">JSON</option>
+              <option value="KML">KML</option>
+              <option value="Log">Log</option>
+              <option value="Markdown">Markdown</option>
+              <option value="PDF">PDF</option>
+              <option value="SQL">SQL</option>
+              <option value="Text">Text</option>
+              <option value="Video">Video</option>
+              <option value="XML">XML</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </div>
+      <div class="col-md-8">
+        <!-- Data Listings -->
+        <h3 class="mb-3">Available Datasets</h3>
+       <div class="list-group">
+ <a href="#" class="list-group-item list-group-item-action">
+  <div class="d-flex w-100 justify-content-between">
+    <h5 class="mb-1">DemoGraphy.csv</h5>
+    <small>CSV</small>
+  </div>
+  <p class="mb-1">Comprehensive dataset containing demographic information of a population.</p>
+  <small>Network: Mainnet | Cost: 0.1 ETH</small>
+</a>
+
+<a href="#" class="list-group-item list-group-item-action">
+  <div class="d-flex w-100 justify-content-between">
+    <h5 class="mb-1">sales.json</h5>
+    <small>JSON</small>
+  </div>
+  <p class="mb-1">JSON file containing sales data for a retail business.</p>
+  <small>Network: Ropsten Testnet | Cost: 0.05 ETH</small>
+</a>
+
+<a href="#" class="list-group-item list-group-item-action">
+  <div class="d-flex w-100 justify-content-between">
+    <h5 class="mb-1">CityInfo.xml</h5>
+    <small>XML</small>
+  </div>
+  <p class="mb-1">XML dataset containing weather information for various cities.</p>
+  <small>Network: Görli Testnet | Cost: 0.08 ETH</small>
+</a>
+
+<!-- Add more data listings -->
+
+<!-- Randomly Generated Dataset -->
+<a href="#" class="list-group-item list-group-item-action">
+  <div class="d-flex w-100 justify-content-between">
+    <h5 class="mb-1">Random Dataset</h5>
+    <small>Text</small>
+  </div>
+  <p class="mb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <small>Network: Rinkeby Testnet | Cost: 0.12 ETH</small>
+</a>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4 mt-5">
+    <div class="container">
+      <p>&copy; 2024 Team MVJ</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare

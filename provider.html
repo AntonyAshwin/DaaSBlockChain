@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Provider Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Data Provision Centre</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+ 
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+<li class="nav-item">
+    <a class="nav-link" href="loggedin.html">DemoUser123</a>
+</li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mt-5">
+    <div class="row mt-5">
+      <div class="col-md-6">
+<nav><ul> <a class="nav-link" href="loggedin.html">Back</a></ul></nav>
+        <h2>Data Provision Form</h2>
+        <form>
+          <div class="form-group">
+            <label for="dataName">Data Name</label>
+            <input type="text" class="form-control" id="dataName" placeholder="Enter data name">
+          </div>
+          <div class="form-group">
+            <label for="dataDescription">Data Description</label>
+            <textarea class="form-control" id="dataDescription" rows="3" placeholder="Enter data description"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="dataPrice">Price</label>
+            <div class="input-group">
+              <input type="number" class="form-control" id="dataPrice" placeholder="Enter data price">
+              <div class="input-group-append">
+                <select class="custom-select" id="cryptoCurrency">
+                  <option selected>Select Currency</option>
+                  <option value="ETH">Ethereum (ETH)</option>
+                  <option value="BTC">Bitcoin (BTC)</option>
+                  <!-- Add more options for other cryptocurrencies -->
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="dataType">Data Type</label>
+           <select class="custom-select" id="dataType">
+    <option selected>Select Data Type</option>
+    <option value="API">API</option>
+    <option value="Archive">Archive</option>
+    <option value="Audio">Audio</option>
+    <option value="Backup">Backup</option>
+    <option value="Certificate">Certificate</option>
+    <option value="Config">Config</option>
+    <option value="CSV">CSV</option>
+    <option value="Excel">Excel</option>
+    <option value="GIS">GIS</option>
+    <option value="HTML">HTML</option>
+    <option value="Image">Image</option>
+    <option value="JSON">JSON</option>
+    <option value="KML">KML</option>
+    <option value="Log">Log</option>
+    <option value="Markdown">Markdown</option>
+    <option value="PDF">PDF</option>
+    <option value="SQL">SQL</option>
+    <option value="Text">Text</option>
+    <option value="Video">Video</option>
+    <option value="XML">XML</option>
+</select>
+
+          </div>
+          <div class="form-group">
+            <label for="attachment">Attachment</label>
+            <input type="file" class="form-control-file" id="attachment">
+          </div>
+<div class="form-group">
+            <label for="dataType">Network</label>
+   <div class="form-group">
+    <label for="ethereumNetwork">Ethereum Network</label>
+    <select class="custom-select" id="ethereumNetwork">
+        <option selected>Select Ethereum Network</option>
+        <option value="mainnet">Mainnet</option>
+        <option value="ropsten">Ropsten Testnet</option>
+        <option value="rinkeby">Rinkeby Testnet</option>
+        <option value="goerli">Görli Testnet</option>
+        <!-- Add more options for other Ethereum networks if needed -->
+    </select>
+</div>
+
+          </div>
+         <div class="form-group">
+    <label for="walletAddress">Crypto Wallet Address</label>
+    <input type="text" class="form-control" id="walletAddress" placeholder="Enter your crypto wallet address">
+</div>
+<div class="form-group">
+    <label for="walletPrivateKey">Crypto Wallet Private Key</label>
+    <input type="password" class="form-control" id="walletPrivateKey" placeholder="Enter your crypto wallet private key">
+</div>
+
+         <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="acknowledge">
+    <label class="form-check-label" for="acknowledge">I acknowledge that any deductions made from my account are voluntary and authorized by me. I understand and accept the terms and conditions associated with providing data through this platform. I confirm that I have carefully reviewed all relevant information and agree to proceed with the transaction willingly and knowingly.</label>
+</div>
+
+          <button type="submit" class="btn btn-primary">Submit Data</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h2>Data History</h2>
+        <!-- Example table showing previously provided data -->
+      <table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Data Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th> <!-- Added Action column -->
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Sport_Statistics.csv</td>
+            <td>Comprehensive CSV file containing detailed statistics for various sports events, including player performance metrics, team statistics, and match outcomes.</td>
+            <td>0.1 ETH</td>
+            <td><button class="btn btn-sm btn-secondary" enabled><i class="fas fa-copy"></i>Download</button></td> <!-- Placeholder for the action column in the first row -->
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>https://api.appgocers.com/v2/data/z6f2n7</td>
+            <td>A link to version 2 of the data endpoint 'z6f2n7' on the 'appgocers' API.</td>
+            <td>0.05 ETH</td>
+            <td><button class="btn btn-sm btn-secondary" enabled><i class="fas fa-copy"></i>Copy URL</button></td> <!-- Copy button with clipboard icon -->
+        </tr>
+        <!-- Add more rows for additional data -->
+    </tbody>
+</table>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4 mt-5">
+    <div class="container">
+      <p>&copy; 2024 Team MVJ</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script

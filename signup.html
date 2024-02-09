@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up / Log In - Your Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Data Provision Centre</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signup.html">Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Sign Up Form -->
+      <div class="col-md-6 mb-4">
+        <h2 class="text-center mb-4">Sign Up</h2>
+        <form>
+          <div class="form-group">
+            <label for="signup-email">Email address</label>
+            <input type="email" class="form-control" id="signup-email" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="signup-password">Password</label>
+            <input type="password" class="form-control" id="signup-password" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-secondary btn-block">Sign Up</button>
+        </form>
+      </div>
+      <!-- Log In Form -->
+     <!-- Log In Form -->
+<div class="col-md-6 mb-4">
+    <h2 class="text-center mb-4">Log In</h2>
+    <form id="loginForm">
+        <div class="form-group">
+            <label for="login-email">Email address</label>
+            <input type="text" class="form-control" id="login-email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="login-password">Password</label>
+            <input type="password" class="form-control" id="login-password" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="loginButton">Log In</button>
+    </form>
+</div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center py-4 mt-5">
+    <div class="container">
+      <p>&copy; 2024 Team MVJ</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom JavaScript -->
+ <script>
+    $(document).ready(function () {
+        $('#loginForm').submit(function (e) {
+            e.preventDefault(); // Prevent the default form submission
+
+            // Get the values from the input fields
+            var email = $('#login-email').val();
+            var password = $('#login-password').val();
+
+            // Check if the login credentials match
+            if (email === 'DemoUser123' && password === 'pass123') {
+                // Redirect to the loggedin.html page
+                window.location.href = 'loggedin.html';
+            } else {
+                // Show an error message or handle invalid credentials
+                alert('Invalid username or password');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
